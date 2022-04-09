@@ -1,7 +1,13 @@
-import TeleBot from "telebot"
+import {API, Upload, Updates} from 'vk-io';
 
-const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
+const api = new API({token: process.env.TOKEN});
 
-bot.on('text', msg => msg.reply.text(msg.text))
+const upload = new Upload({api});
 
-export default bot
+const updates = new Updates({api, upload});
+
+updates.on('message', (context) => {
+    console.debug(context)
+});
+
+export default updates;

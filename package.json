@@ -7,6 +7,6 @@
     "tunnel": "vc dev & lt --port 3000"
   },
   "dependencies": {
-    "telebot": "latest"
+    "vk-io": "latest"
   }
 }
