@@ -1,10 +1,10 @@
 {
-  "name": "telebot-vercel",
+  "name": "vk-vercel-bot",
   "version": "1.0.0",
   "author": "PonomareVlad",
   "scripts": {
     "dev": "vc dev",
-    "tunnel": "vc dev & lt --port 3000"
+    "tunnel": "vc dev & lt --port 3000 --subdomain vk-vercel-bot"
   },
   "dependencies": {
     "vk-io": "latest"
